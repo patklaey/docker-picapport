@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  picapport:
+    image: patklaey/picapport
+    container_name: picapport
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - database:/opt/picapport/.picapport/db
+      - cache://opt/picapport/.picapport/cache
+      - /home/pat/Pictures/Riga/JPEG:/data/Pictures/Riga
+
+volumes:
+  database:
+    driver: local
+  cache:
+    driver: local
