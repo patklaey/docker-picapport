@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   picapport:
-    image: patklaey/picapport
+    image: patklaey/picapport:8.2.02
     container_name: picapport
     restart: always
     ports:
@@ -12,6 +12,7 @@ services:
       - cache://opt/picapport/.picapport/cache
       - "/home/pat/Pictures/Riga/JPEG:/data/Pictures/Riga"
       - "/home/pat/Pictures/Malaysia/JPEG:/data/Pictures/Malaysia"
+      - "/home/pat/Pictures/Helsinki/JPEG:/data/Pictures/Helsinki"
       - "/home/pat/Pictures/New York/New York 1st choice:/data/Pictures/New York"
       - "/home/pat/Pictures/Oman/1. choice:/data/Pictures/Oman"
       - "/home/pat/Pictures/Portugal/1st choice:/data/Pictures/Portugal"
@@ -22,7 +23,6 @@ services:
       - "/home/pat/Pictures/Sri Lanka/jpg:/data/Pictures/Sri Lanka"
       - "/home/pat/Pictures/New Aruba/JPEG:/data/Pictures/New Aruba"
       - "/home/pat/Pictures/Marrakech/JPEG:/data/Pictures/Marrakech"
-      - "/home/pat/Pictures/Helsinki/JPEG:/data/Pictures/Helsinki"
       - "/home/pat/Pictures/Sardinien/JPEG:/data/Pictures/Sardinien"
       - "/home/pat/Pictures/Australia_2018/JPEG:/data/Pictures/Australia"
       - "/home/pat/Pictures/Marrakech_2018:/data/Pictures/Marrakech_2018"

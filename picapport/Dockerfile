@@ -1,7 +1,7 @@
 FROM ubuntu
 LABEL maintainer="pat@247.ch"
 
-ARG VERSION=8-1-01
+ARG VERSION=8-2-02
 
 RUN apt-get update && \
     apt-get install -y default-jdk-headless
