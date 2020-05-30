@@ -9,7 +9,9 @@ services:
       - 8080:8080
     volumes:
       - database:/opt/picapport/.picapport/db
-      - cache://opt/picapport/.picapport/cache
+      - cache:/opt/picapport/.picapport/cache
+      - users:/opt/picapport/.picapport/users
+      - "/home/pat/Pictures/Mexiko:/data/Pictures/Mexico"
       - "/home/pat/Pictures/Riga/JPEG:/data/Pictures/Riga"
       - "/home/pat/Pictures/Malaysia/JPEG:/data/Pictures/Malaysia"
       - "/home/pat/Pictures/Helsinki/JPEG:/data/Pictures/Helsinki"
@@ -33,4 +35,6 @@ volumes:
   database:
     driver: local
   cache:
+    driver: local
+  users:
     driver: local
