@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   picapport:
-    image: patklaey/picapport:8.2.02
+    image: patklaey/picapport:9.0.01
     container_name: picapport
     restart: always
     ports:
