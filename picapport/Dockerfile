@@ -20,4 +20,4 @@ ADD https://dl.bintray.com/groovy/maven/apache-groovy-binary-3.0.7.zip /opt/pica
 EXPOSE 8080
 STOPSIGNAL SIGTERM
 
-ENTRYPOINT ["java", "-XX:MaxMetaspaceSize=64m", "-Xms64m", "-Xmx512m", "-Xss4m", "-Duser.home=/opt/picapport", "-DTRACE=INFO", "-jar", "/opt/picapport/picapport-headless.jar"]
+ENTRYPOINT ["java", "-XX:MaxMetaspaceSize=64m", "-Xms64m", "-Xmx1g", "-Xss4m", "-Duser.home=/opt/picapport", "-DTRACE=INFO", "-jar", "/opt/picapport/picapport-headless.jar"]
