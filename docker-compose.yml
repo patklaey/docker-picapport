@@ -33,7 +33,9 @@ services:
       - "/home/pat/Pictures/Maldives_2020/JPEG:/data/Pictures/Maldives_2020"
       - "/home/pat/Pictures/Peru/JPEG:/data/Pictures/Peru"
       - "/home/pat/Pictures/Ticino_2020/JPEG:/data/Pictures/Ticino_2020"
+      - "/home/pat/Pictures/Santorini/JPEG:/data/Pictures/Santorini"
       - "/home/pat/Pictures/Peloponnes/JPEG:/data/Pictures/Peloponnes"
+      - "/home/pat/Pictures/Naxos-Paros/JPEG:/data/Pictures/Naxos-Paros"
 
 volumes:
   database:
